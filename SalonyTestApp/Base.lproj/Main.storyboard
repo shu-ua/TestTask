@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cqy-c5-26G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mqV-aB-nVI">
+            <objects>
+                <navigationController id="cqy-c5-26G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XGL-9k-OPo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RPK-fU-6vA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1E-Z1-Ldd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="139"/>
+        </scene>
+        <!--Add new address-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AddressSelectionVC" title="Add new address" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AddressSelectionVC" customModule="SalonyTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fit-lL-HbA" userLabel="MapView" customClass="MapView" customModule="SalonyTestApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zz-GH-xCF" userLabel="CurrentLocation">
+                                <rect key="frame" x="325" y="556" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="H9r-Dd-F8m"/>
+                                    <constraint firstAttribute="height" constant="40" id="WwZ-Us-XkY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="mylocation_button"/>
+                                <connections>
+                                    <action selector="currentLocationTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0q7-r2-nVx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnY-7Q-Ro3">
+                                <rect key="frame" x="11" y="606" width="117.5" height="52"/>
+                                <color key="backgroundColor" red="0.67450980392156867" green="0.70588235294117641" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tok-j7-7cP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm6-Yg-hx6">
+                                <rect key="frame" x="135.5" y="606" width="229.5" height="52"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.61960784313725492" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="aVb-Hr-nPe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmButtonTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oy-Fl-emQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nm6-Yg-hx6" secondAttribute="bottom" constant="9" id="1Wo-O9-xJt"/>
+                            <constraint firstItem="Nm6-Yg-hx6" firstAttribute="leading" secondItem="MnY-7Q-Ro3" secondAttribute="trailing" constant="7" id="5cE-xk-g1L"/>
+                            <constraint firstAttribute="trailing" secondItem="fit-lL-HbA" secondAttribute="trailing" id="Dpo-g0-zfn"/>
+                            <constraint firstItem="fit-lL-HbA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JfX-U4-ywv"/>
+                            <constraint firstItem="Nm6-Yg-hx6" firstAttribute="height" secondItem="MnY-7Q-Ro3" secondAttribute="height" id="MWn-CN-qqf"/>
+                            <constraint firstItem="MnY-7Q-Ro3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="R9q-as-yQd"/>
+                            <constraint firstItem="Nm6-Yg-hx6" firstAttribute="centerY" secondItem="MnY-7Q-Ro3" secondAttribute="centerY" id="Uvb-z6-Hjr"/>
+                            <constraint firstItem="Nm6-Yg-hx6" firstAttribute="width" secondItem="MnY-7Q-Ro3" secondAttribute="width" constant="112" id="Vir-XL-IDV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fit-lL-HbA" secondAttribute="bottom" id="h5x-Vl-Ede"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MnY-7Q-Ro3" secondAttribute="bottom" constant="9" id="nW8-Ju-0ce"/>
+                            <constraint firstAttribute="trailing" secondItem="Nm6-Yg-hx6" secondAttribute="trailing" constant="10" id="q4s-ja-b0P"/>
+                            <constraint firstAttribute="trailing" secondItem="6Zz-GH-xCF" secondAttribute="trailing" constant="10" id="srf-6d-b0e"/>
+                            <constraint firstItem="Nm6-Yg-hx6" firstAttribute="top" secondItem="6Zz-GH-xCF" secondAttribute="bottom" constant="10" id="v42-Z8-8od"/>
+                            <constraint firstItem="fit-lL-HbA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vMY-ag-rYZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AXw-pR-TnE">
+                        <barButtonItem key="rightBarButtonItem" image="search_icon" id="KC1-zC-ZDj">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="searchBarButtonTouchUp:" destination="BYZ-38-t0r" id="zWF-5t-KXd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentLocationButton" destination="6Zz-GH-xCF" id="Sh0-Vy-Isx"/>
+                        <outlet property="mapView" destination="fit-lL-HbA" id="fUv-mo-odN"/>
+                        <outlet property="searchBarButtonItem" destination="KC1-zC-ZDj" id="tQT-Cw-Eve"/>
+                        <segue destination="ADH-8n-5O6" kind="show" identifier="addNewAddress" id="Rot-iv-UNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Add AddressVC-->
+        <scene sceneID="Nk7-Ol-Nve">
+            <objects>
+                <viewController storyboardIdentifier="AddAddressVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ADH-8n-5O6" customClass="AddAddressVC" customModule="SalonyTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLk-Yg-lcU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEB-H7-QGD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OYx-pS-Z9O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IC1-EB-uHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mylocation_button" width="58" height="58"/>
+        <image name="search_icon" width="21" height="20"/>
+    </resources>
+</document>

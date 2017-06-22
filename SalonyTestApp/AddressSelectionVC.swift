@@ -28,12 +28,12 @@ class AddressSelectionVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Add new address"
         self.titleView = navigationItem.titleView
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = "Add new address"
     }
     
     //MARK: - Segue
@@ -61,7 +61,7 @@ class AddressSelectionVC: BaseViewController {
         self.showLoadingMask()
         let coordinateLocation = CLLocation(latitude: self.mapView.marker!.position.latitude, longitude: self.mapView.marker!.position.longitude)
         
-        networkManager.requestAddressInfo(withLocation: coordinateLocation) { (address, errorMessage) in
+        networkManager?.requestAddressInfo(withLocation: coordinateLocation) { (address, errorMessage) in
             self.dismissLoadingMask()
             if let error = errorMessage {
                 self.displayAlert(message: error)

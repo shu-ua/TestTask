@@ -15,7 +15,7 @@ final class Address: Mappable {
     var area: String?
     var appartmentType: String?
     var block: String?
-    var streer: String?
+    var street: String?
     var building: String?
     var floor: String?
     var apartmentNo: String?
@@ -31,7 +31,7 @@ final class Address: Mappable {
     func mapping(map: Map) {
         addressName <- map["preview"]
         block <- map["block"]
-        streer <- map["streer"]
+        street <- map["street"]
         area <- map["area"]
     }
     

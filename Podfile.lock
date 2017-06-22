@@ -7,6 +7,8 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.2.0):
     - GoogleMaps/Base (= 2.2.0)
+  - IQKeyboardManagerSwift (4.0.9)
+  - JVFloatLabeledTextField (1.1.1)
   - KVNProgress (2.3.1)
   - Moya (8.0.4):
     - Moya/Core (= 8.0.4)
@@ -22,6 +24,8 @@ PODS:
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - IQKeyboardManagerSwift
+  - JVFloatLabeledTextField
   - KVNProgress (~> 2.3)
   - Moya
   - ObjectMapper
@@ -32,6 +36,8 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  JVFloatLabeledTextField: 0e5524b097f102036214dd8279edc8ecf08b5e18
   KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
   Moya: a08bc060c7a44eee27447b239ed33a189b641e2b
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
@@ -39,6 +45,6 @@ SPEC CHECKSUMS:
   Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
   SwinjectStoryboard: 4c71c25f312322844d39ee06f0f523db7b9b10a3
 
-PODFILE CHECKSUM: 53f3f2eaf77fae943e769e02963cc5621e615384
+PODFILE CHECKSUM: 6494f856bcd8c36e3933d86bb95d28dba1a7ec2e
 
 COCOAPODS: 1.2.1

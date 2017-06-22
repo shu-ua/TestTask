@@ -11,6 +11,8 @@ target 'SalonyTestApp' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'KVNProgress', '~> 2.3'
+  pod 'IQKeyboardManagerSwift'
+  pod 'JVFloatLabeledTextField'
 
   target 'SalonyTestAppTests' do
     inherit! :search_paths

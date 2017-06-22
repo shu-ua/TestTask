@@ -36,8 +36,6 @@ extension AddressRestService: TargetType {
         switch self {
         case .addressInfo(let location):
             return ["lat": location.coordinate.latitude, "lng": location.coordinate.longitude]
-        default:
-            return nil
         }
     }
     

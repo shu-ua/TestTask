@@ -11,11 +11,13 @@
 		905C1E1B8374E63D8C95FADD /* Pods_SalonyTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD781415ACA035AD31BA3F85 /* Pods_SalonyTestApp.framework */; };
 		F2197C301EFB05A200CA9EC6 /* AddressSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2197C2F1EFB05A200CA9EC6 /* AddressSelectionVC.swift */; };
 		F2197C321EFB09A900CA9EC6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2197C311EFB09A900CA9EC6 /* BaseViewController.swift */; };
+		F2637FA81EFBC22B0008ADC7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41AF31EFAEF5900B1B4BE /* Address.swift */; };
+		F272A74B1EFBBE8E00AB8483 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A74A1EFBBE8E00AB8483 /* AddressTests.swift */; };
+		F29F5F5F1EFBC76D00F8CE46 /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F5F5E1EFBC76D00F8CE46 /* ApplicationTest.swift */; };
 		F2C41ACC1EFAE46800B1B4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41ACB1EFAE46800B1B4BE /* AppDelegate.swift */; };
 		F2C41AD11EFAE46800B1B4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C41ACF1EFAE46800B1B4BE /* Main.storyboard */; };
 		F2C41AD31EFAE46800B1B4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C41AD21EFAE46800B1B4BE /* Assets.xcassets */; };
 		F2C41AD61EFAE46800B1B4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C41AD41EFAE46800B1B4BE /* LaunchScreen.storyboard */; };
-		F2C41AE11EFAE46800B1B4BE /* SalonyTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41AE01EFAE46800B1B4BE /* SalonyTestAppTests.swift */; };
 		F2C41AF01EFAEA9700B1B4BE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41AEF1EFAEA9700B1B4BE /* Config.swift */; };
 		F2C41AF21EFAEE1F00B1B4BE /* NetworkManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41AF11EFAEE1F00B1B4BE /* NetworkManagerType.swift */; };
 		F2C41AF41EFAEF5900B1B4BE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C41AF31EFAEF5900B1B4BE /* Address.swift */; };
@@ -42,6 +44,9 @@
 		F0BF7BF9510082D5BC64BEB4 /* Pods_SalonyTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalonyTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2197C2F1EFB05A200CA9EC6 /* AddressSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSelectionVC.swift; sourceTree = "<group>"; };
 		F2197C311EFB09A900CA9EC6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F272A7491EFBBE8E00AB8483 /* SalonyTestAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SalonyTestAppTests-Bridging-Header.h"; path = "SalonyTestAppTests/SalonyTestAppTests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F272A74A1EFBBE8E00AB8483 /* AddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		F29F5F5E1EFBC76D00F8CE46 /* ApplicationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
 		F2C41AC81EFAE46800B1B4BE /* SalonyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C41ACB1EFAE46800B1B4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C41AD01EFAE46800B1B4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +54,6 @@
 		F2C41AD51EFAE46800B1B4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C41AD71EFAE46800B1B4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C41ADC1EFAE46800B1B4BE /* SalonyTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonyTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2C41AE01EFAE46800B1B4BE /* SalonyTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonyTestAppTests.swift; sourceTree = "<group>"; };
 		F2C41AE21EFAE46800B1B4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C41AEF1EFAEA9700B1B4BE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F2C41AF11EFAEE1F00B1B4BE /* NetworkManagerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerType.swift; sourceTree = "<group>"; };
@@ -100,14 +104,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F2197C2E1EFB057F00CA9EC6 /* ViewController */ = {
+		F2197C2E1EFB057F00CA9EC6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				F2197C311EFB09A900CA9EC6 /* BaseViewController.swift */,
 				F2DDEADB1EFB1A040088E8D5 /* AddAddress */,
 				F2DDEADA1EFB19F90088E8D5 /* AddressSelection */,
 			);
-			name = ViewController;
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F272A7481EFBBE5D00AB8483 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F272A74A1EFBBE8E00AB8483 /* AddressTests.swift */,
+				F29F5F5E1EFBC76D00F8CE46 /* ApplicationTest.swift */,
+				F272A7491EFBBE8E00AB8483 /* SalonyTestAppTests-Bridging-Header.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		F2C41ABF1EFAE46800B1B4BE = {
@@ -138,7 +152,7 @@
 				F2C41AEC1EFAE63A00B1B4BE /* Models */,
 				F2C41AF51EFAF28700B1B4BE /* Rest */,
 				F2DDEADC1EFB1E3B0088E8D5 /* View */,
-				F2197C2E1EFB057F00CA9EC6 /* ViewController */,
+				F2197C2E1EFB057F00CA9EC6 /* ViewControllers */,
 				F2C41ACB1EFAE46800B1B4BE /* AppDelegate.swift */,
 				F2C41ACF1EFAE46800B1B4BE /* Main.storyboard */,
 				F2C41AD21EFAE46800B1B4BE /* Assets.xcassets */,
@@ -151,7 +165,7 @@
 		F2C41ADF1EFAE46800B1B4BE /* SalonyTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2C41AE01EFAE46800B1B4BE /* SalonyTestAppTests.swift */,
+				F272A7481EFBBE5D00AB8483 /* Models */,
 				F2C41AE21EFAE46800B1B4BE /* Info.plist */,
 			);
 			path = SalonyTestAppTests;
@@ -283,6 +297,7 @@
 					F2C41ADB1EFAE46800B1B4BE = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = LY2JY343Q2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F2C41AC71EFAE46800B1B4BE;
 					};
@@ -441,7 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C41AE11EFAE46800B1B4BE /* SalonyTestAppTests.swift in Sources */,
+				F2637FA81EFBC22B0008ADC7 /* Address.swift in Sources */,
+				F272A74B1EFBBE8E00AB8483 /* AddressTests.swift in Sources */,
+				F29F5F5F1EFBC76D00F8CE46 /* ApplicationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +517,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -551,6 +569,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -575,6 +594,7 @@
 			baseConfigurationReference = FD968D8F6CC4E4FD8725B6AE /* Pods-SalonyTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LY2JY343Q2;
 				INFOPLIST_FILE = SalonyTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -589,6 +609,7 @@
 			baseConfigurationReference = 123A9270B192E89E81AEAD70 /* Pods-SalonyTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LY2JY343Q2;
 				INFOPLIST_FILE = SalonyTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -604,11 +625,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LY2JY343Q2;
 				INFOPLIST_FILE = SalonyTestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shshsh.SalonyTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SalonyTestAppTests/SalonyTestAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonyTestApp.app/SalonyTestApp";
 			};
@@ -620,11 +644,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LY2JY343Q2;
 				INFOPLIST_FILE = SalonyTestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shshsh.SalonyTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SalonyTestAppTests/SalonyTestAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonyTestApp.app/SalonyTestApp";
 			};

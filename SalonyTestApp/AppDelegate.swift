@@ -10,6 +10,7 @@ import UIKit
 import GoogleMaps
 import Swinject
 import SwinjectStoryboard
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey(Credential.GOOGLE_MAPS_APIKEY)
         self.window?.rootViewController = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container).instantiateInitialViewController()
         self.setupNavigationBarStyle()
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
         
         return true
     }
@@ -41,8 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - UI Styling
     func setupNavigationBarStyle() {
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
-        UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        //UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().barTintColor = UIColor(red:0.62, green:0.12, blue:0.38, alpha:1.0)
         UINavigationBar.appearance().isTranslucent = false
@@ -53,8 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - Dependency Injection methods
     
-    class func resolve<ObjectType>(_ type: ObjectType.Type) -> ObjectType {
-        return self.sharedInstance().container.resolve(type)!
+    class func resolve<ObjectType>(_ type: ObjectType.Type) -> ObjectType? {
+        return self.sharedInstance().container.resolve(type)
     }
     
 }

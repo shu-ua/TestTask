@@ -15,6 +15,8 @@ class AddAddressVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Add new address"
+        
+        print(address)
     }
 
 }

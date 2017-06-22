@@ -58,7 +58,17 @@ class AddressSelectionVC: BaseViewController {
     }
     
     @IBAction func confirmButtonTouchUp(_ sender: Any) {
+        self.showLoadingMask()
+        let coordinateLocation = CLLocation(latitude: self.mapView.marker!.position.latitude, longitude: self.mapView.marker!.position.longitude)
         
+        networkManager.requestAddressInfo(withLocation: coordinateLocation) { (address, errorMessage) in
+            self.dismissLoadingMask()
+            if let error = errorMessage {
+                self.displayAlert(message: error)
+            } else {
+                self.performSegue(withIdentifier: ControllerSegue.addAddress.rawValue, sender: address)
+            }
+        }
     }
     
     @IBAction func currentLocationTouchUp(_ sender: Any) {

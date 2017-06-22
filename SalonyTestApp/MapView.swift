@@ -21,7 +21,7 @@ class MapView: UIView {
         return map
     }()
     
-    private var marker:GMSMarker?
+    var marker:GMSMarker?
     
     //MARK: - Initializers
     required init?(coder aDecoder: NSCoder) {

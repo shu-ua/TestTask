@@ -10,6 +10,7 @@ target 'SalonyTestApp' do
   pod 'SwinjectStoryboard'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'KVNProgress', '~> 2.3'
 
   target 'SalonyTestAppTests' do
     inherit! :search_paths
